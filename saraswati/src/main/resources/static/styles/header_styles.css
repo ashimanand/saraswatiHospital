@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.head_primary{
+	color: #003366;
+    height: 120PX;
+    font-weight: bold;
+}
+.headLogo{
+  	background-color: red;
+    height: 100%;
+}
+.head_content{
+	height: 100%;
+	background-color: bisque;
+}
+.headmsg1{
+	
+    text-align: -webkit-center;
+    font-size: xx-large
+}
+.headmsg2{
+	text-align: -webkit-center;
+	font-size: x-large
+}

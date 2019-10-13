@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="../styles/header_styles.css" />
-<link rel="stylesheet" type="text/css" href="../styles/print.css" />
+<link rel="stylesheet" type="text/css" media = "print" href="../styles/print.css" />
 <link rel="stylesheet" type="text/css" href="../styles/docappoint_styles.css" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -20,7 +20,11 @@ $(document).ready(function(){
 </head>
 <body>
 
-<div class="col-md-8" id="section-to-print">
+<div class="col-md-6" id="section-to-print">
+
+
+<legend id="header-widgets">Print Preview</legend>
+<br><br><br><br>
 <div class="print_preview">
 <div class="previw_heading">
 <div class="row">
@@ -33,14 +37,18 @@ $(document).ready(function(){
 <hr>
 <br>
 <div class="row">
+
 <label class="col-md-3" id="recept_no">Recept No: 2</label>
-<label id="current_date"></label>
+<label class="col-md-3" id="current_date"></label>
 </div>
+<div class="row">
 
-<label for="doctors_info">Doctor:</label>
+<label class="col-md-2" for="doctors_info">Doctor:</label>
+<label class="col-md-10" >DR. Ramjee Prasad, CardioDiabtologist <br> Pulmonary Medicine & Critical Care</label>
+<br>
 
-<label  id="doctors_name_p"><span>DR. Ramjee Prasad, CardioDiabtologist</span>
-<br><label>Pulmonary Medicine & Critical Care</label></label>
+
+</div>
 
 <br>
 <div class="row">
@@ -52,9 +60,9 @@ $(document).ready(function(){
 <br>
 <br>
 <div class="row">								
-<label class="col-md-8 control-label"></label>
-<div class="col-md-4 control-label" id="patient_name_p"><b>Authorised Signatory</b></div>    
+<label class="authorisedsignatory" id="Authorised_signatory">Authorised Signatory</label>    
 </div>
+
 
 </div>
 </div>

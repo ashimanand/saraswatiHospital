@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../styles/medicaltest_styles.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+<script> 
+
+
+</script>
+
+</head>
+<body>
+<div id="header_content"></div>
+<script> 
+    $(function(){
+      $("#header_content").load("../generic/header.html"); 
+    });
+    </script>
+<div class="col-md-12">
+<div class="col-md-6">
+<form class="form-horizontal" action="printmedicaltestbill.html" autocomplete="off">
+<fieldset>
+
+<!-- Form Name -->
+<legend>U.S.G</legend>
+
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-3 control-label" for="patient_name">Name of Patient</label>  
+  <div class="col-md-8">
+  <input autocomplete="false" id="patient_name" name="patient_name" type="text" placeholder="Name of Patient" class="form-control input-md" required="">
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-3 control-label" for="patient_address">Address</label>
+  <div class="col-md-8">
+    <input id="appoinment_date" name="patient_address" type="text" placeholder="Address" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-3 control-label" for="mobile_number">Mobile Number</label>  
+  <div class="col-md-8">
+  <input id="patient_name" autocomplete="false" name="mobile_number" type="number" placeholder="Mobile number" class="form-control input-md" required="">
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-3 control-label" for="test_date">Date</label>  
+  <div class="col-md-8">
+  <input id="appoinment_date" name="appoinment_date" type="date" placeholder="Appoinment Date" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-3 control-label" for="test_type">Select Test Type</label>
+  <div class="col-md-8">
+    <select id="test_type" name="test_type" class="form-control">
+      <option value="1">X-Ray</option>
+      <option value="2">ECG</option>
+      <option value="3">USG</option>
+    </select>
+  </div>
+</div>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-3 control-label" for="textinput">Payment (Rs.)</label>  
+  <div class="col-md-8">
+  
+  <input id="textinput" name="textinput" type="text" placeholder="payment" class="form-control input-md">
+    
+  </div>
+</div>
+
+
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-3 control-label" for="textinput"></label> 
+  <div class="col-md-8"> 
+    <button id="appointment_submit" name="appointment_submit" class="btn btn-primary">Save and Print Preview</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+</div>
+
+
+
+</body>
+</html>

@@ -22,3 +22,13 @@
 	text-align: -webkit-center;
 	font-size: x-large
 }
+
+.headmsg1_p{
+	text-align: -webkit-center;
+	font-size: large;
+}
+.headmsg2_p{
+	text-align: -webkit-center;
+	font-size: small;
+}
+.previw_heading{font-weight: bold; }

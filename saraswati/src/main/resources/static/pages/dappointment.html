@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../styles/docappoint_styles.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<title>Insert title here</title>
+<script> 
+
+$(document).ready(function(){
+    $("#loginFormSubmit").click(function(){        
+        $("#loginForm").submit(); // Submit the form
+    });
+});
+
+
+</script>
+
+</head>
+<body>
+<div id="header_content"></div>
+<script> 
+    $(function(){
+      $("#header_content").load("../generic/header.html"); 
+    });
+    </script>
+<div class="col-md-12">
+<div class="col-md-6">
+<form class="form-horizontal" action="printdocacppointement.html"  autocomplete="off">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Doctor Appoinment</legend>
+
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-3 control-label" for="patient_name">Name of Patient</label>  
+  <div class="col-md-8">
+  <input id="patient_name" name="patient_name" type="text" placeholder="Name of Patient" class="form-control input-md" required="">
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-3 control-label" for="mobile_number">Mobile Number</label>  
+  <div class="col-md-8">
+  <input id="patient_name" name="mobile_number" type="number" placeholder="Mobile number" class="form-control input-md" required="">
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-3 control-label" for="doctors_list">Doctor</label>
+  <div class="col-md-8">
+    <select id="doctors_list" name="doctors_list" class="form-control">
+      <option value="1">DR. RAMJI PRASAD</option>
+      <option value="2">DR. Preeti Singh</option>
+    </select>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-3 control-label" for="appoinment_date">Appoinment Date</label>  
+  <div class="col-md-8">
+  <input id="appoinment_date" name="appoinment_date" type="date" placeholder="Appoinment Date" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-3 control-label" for="appoinment_time">Appoinment Time</label>  
+  <div class="col-md-8">
+  <input id="appoinment_time" name="appoinment_time" type="text" placeholder="Appoinment Time" class="form-control input-md">
+  </div>
+</div>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-3 control-label" for="textinput">Payment (Rs.)</label>  
+  <div class="col-md-8">
+  <input id="textinput" name="textinput" type="text" placeholder="payment" class="form-control input-md">
+    
+  </div>
+</div>
+
+
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-3 control-label" for="textinput"></label> 
+  <div class="col-md-8"> 
+    <button id="appointment_submit" name="appointment_submit" class="btn btn-primary">Save and Print Preview</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+</div>
+
+
+
+</body>
+</html>

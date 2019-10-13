@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../styles/header_styles.css" />
+<link rel="stylesheet" type="text/css" media = "print" href="../styles/print.css" />
+<link rel="stylesheet" type="text/css" href="../styles/medicaltestbill_styles.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Ek+Mukta" rel="stylesheet">
+<script> 
+$(document).ready(function(){
+    
+    var currentDate= new Date();
+    $("#current_date").text( "Date: "+(currentDate.getDate() )+ "/" + (currentDate.getMonth() == 0 ? 1: 
+    				currentDate.getMonth()== 11 ? 12: (currentDate.getMonth()+1) )+ "/"+ currentDate.getFullYear() );
+});
+</script>
+</head>
+<body>
+
+<div class="col-md-6" id="section-to-print">
+<legend id="header-widgets">Print Preview</legend>
+<br><br><br><br>
+<div class="print_preview col-md-12">
+<div class="previw_heading">
+<div class="row">
+<div class="headmsg1_p">Saraswati Hospital and Research Center</div>
+</div>
+<div class="row">
+<div class="headmsg2_p">ऍम. आई. टी. पूर्वी गेट के सामने, मुजफ्फरपुर ( बिहार)</div>
+</div>
+</div>
+<hr>
+<br>
+<div class="row">
+
+<label class="col-md-3" id="recept_no">Recept No: 2</label>
+<label class="col-md-3" id="current_date"></label>
+</div>
+<div class="row">
+<br>
+
+<label class="col-md-3" id="name_is">Name.</label><label id="name_id">Dr. Ramjee Prasad</label>
+</div>
+<div class="row">
+
+<label class="col-md-3" id="address">Address.</label><label id="address_id">Railway colony dighta ghat patna bihar 800011</label>
+</div>
+<div class="row">
+
+<label class="col-md-3" id="mobile_number">Mobile.</label><label  id="mobie_number_id">8867693313</label>
+</div>
+<br>
+
+<div class="billdivborder col-md-12">
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th style="width:7% !important;" scope="col">#</th>
+      <th style="width:75% !important;" scope="col">Test Description</th>
+      <th style="width:18% !important;" scope="col">Amount Rs.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td >1</th>
+      <td>Mark</td>
+      <td>1200</td>
+      
+    </tr>
+    <tr>
+      <td >2</th>
+      <td>Railway colony dighta ghat patna bihar 800011 <br> Railway colony dighta ghat patna bihar 800011</td>
+      <td>1500</td>
+     
+    </tr>
+    <tr>
+      <td >3</th>
+      <td>Larry</td>
+      <td>200</td>
+      
+    </tr>
+     <tr>
+      <td ></th>
+      <td class="totaltd">Total</td>
+      <td class="totalamounttd"  style="border: 2px solid black !important;">20000</td>
+      
+    </tr>
+  </tbody>
+</table>
+<br>
+														
+
+
+
+</div>
+<br>
+<div class="row">								
+<label class="authorisedsignatory" id="Authorised_signatory">Authorised Signatory</label>    
+</div>
+</div>
+</div>
+</body>
+</html>
+
